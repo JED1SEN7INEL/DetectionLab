@@ -38,7 +38,3 @@ if (-not (Test-Path $shutUp10RepoPath)) {
 } else {
   Write-Host "ShutUp10 was already installed. Moving On."
 }
-
-# Remove the Edge shortcut from the Desktop
-$lnkPath = "c:\Users\vagrant\Desktop\Microsoft Edge.lnk"
-if (Test-Path $lnkPath) { Remove-Item $lnkPath }
